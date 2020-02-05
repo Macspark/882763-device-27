@@ -1,0 +1,143 @@
+body {
+  font-family: "OpenSans", "Arial", sans-serif;
+  padding: 40px 0;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.15px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* start */
+
+.header {
+  position: relative;
+  padding: 35px 60px;
+
+  box-sizing: border-box;
+
+  background-color: #F7E397;
+}
+
+.header__logo {
+  position: absolute;
+  top: -19px;
+  left: 59px;
+
+  width: 163px;
+  height: 35px;
+}
+
+.header__main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__search {
+  display: flex;
+}
+
+.header__search-bar {
+  padding: 0 37px;
+
+  display: block;
+  box-sizing: border-box;
+  width: 356px;
+  height: 49px;
+
+  font-size: 15px;
+  font-weight: 300;
+
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background-color: #F7E397;
+  background: url("../img/search-icon.svg") no-repeat 2px 50%;
+}
+
+.header__search-bar:focus {
+  border-color: #000000;
+}
+
+.header__search button {
+  visibility: hidden;
+  width: 85px;
+  height: 49px;
+
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.15px;
+
+  border: 2px solid #000000;
+  background-color: #F7E397;
+}
+
+.header__search-bar:focus + button {
+  visibility: visible;
+}
+
+.header__search-bar + button:hover {
+  visibility: visible;
+  color: #ffffff;
+  background-color: #000000;
+
+  transition: 300ms ease-out;
+}
+
+.header__search-bar + button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.header__main-nav a {
+  padding-left: 25px;
+  transition: opacity 300ms ease-out;
+}
+
+.header a:hover {
+  opacity: 0.6;
+}
+
+.header a:active {
+  opacity: 0.3;
+}
+
+.header__login {
+  margin-right: 115px;
+  background: url("../img/login-icon.svg") no-repeat 0 50%;
+}
+
+.header__compare {
+  margin-right: 35px;
+  background: url("../img/compare-icon.svg") no-repeat 0 50%;
+}
+
+.header__cart {
+  background: url("../img/cart-icon.svg") no-repeat 0 50%;
+}
+
+.header__products-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__products-nav a {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  transition: opacity 300ms ease-out;
+}
