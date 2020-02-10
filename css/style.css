@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans.woff2') format('woff2'),
+       url('../fonts/opensans.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensanslight.woff2') format('woff2'),
+       url('../fonts/opensanslight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+       url('../fonts/gilroylight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+       url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: "OpenSans", "Arial", sans-serif;
   padding: 40px 0;
@@ -21,7 +57,7 @@ a {
 
 .header {
   position: relative;
-  padding: 35px 60px;
+  padding: 34px 60px 27px 60px;
 
   box-sizing: border-box;
 
@@ -99,6 +135,10 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.header__main-nav {
+  margin-bottom: 26px;
+}
+
 .header__main-nav a {
   padding-left: 25px;
   transition: opacity 300ms ease-out;
@@ -113,26 +153,29 @@ a {
 }
 
 .header__login {
-  margin-right: 115px;
+  margin-right: 111px;
   background: url("../img/login-icon.svg") no-repeat 0 50%;
 }
 
 .header__compare {
-  margin-right: 35px;
+  margin-right: 33px;
   background: url("../img/compare-icon.svg") no-repeat 0 50%;
 }
 
 .header__cart {
-  background: url("../img/cart-icon.svg") no-repeat 0 50%;
+  background: url("../img/cart-icon.svg") no-repeat 3px 50%;
 }
 
 .header__products-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin-bottom: 20px;
 }
 
 .header__products-nav a {
+  font-family: Gilroy;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
@@ -140,4 +183,33 @@ a {
   text-transform: uppercase;
 
   transition: opacity 300ms ease-out;
+}
+
+.header__catalog-btn {
+  display: flex;
+  align-items: center;
+  margin-right: 190px;
+}
+
+.header__catalog-btn::after {
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: "";
+
+  margin-left: 12px;
+
+  background-image: url("../img/open-catalog-icon.png");
+}
+
+.header__delivery {
+  margin-right: 30px;
+}
+
+.catalog {
+  display: none;
+}
+
+.catalog--active {
+  display: block;
 }
