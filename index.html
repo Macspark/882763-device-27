@@ -24,6 +24,17 @@
       <a class="header__cart" href="#">Корзина</a>
     </div>
 
+    <div class="header__user-nav header__user-nav--active">
+      <form class="header__search" action="https://echo.htmlacademy.ru" method="get">
+        <input class="header__search-bar" id="header__search-bar" type="search" name="search" placeholder="Поиск по сайту">
+        <button type="submit">Найти</button>
+      </form>
+      <a class="header__login" href="#">Валентин Петухов</a>
+      <a class="header__logout" href="#">Выйти</a>
+      <a class="header__compare" href="#">Сравнить</a>
+      <a class="header__cart" href="#">Корзина</a>
+    </div>
+
     <nav class="header__main-nav">
       <ul class="header__main-menu">
         <li class="header__catalog-btn">
@@ -272,65 +283,66 @@
      <div class="company__contact">
        <h2 class="company__title">Контакты</h2>
        <p class="company__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-       <div class="company__map">
-       </div>
-       <a class="company__button" href="contact-us.html">Напишите&nbsp;нам</a>
+       <a class="company__map" href="#"></a>
+       <a class="company__button company__button-msg" href="contact-us.html">Напишите&nbsp;нам</a>
      </div>
    </div>
 
   </main>
 
   <footer class="footer">
-    <div class="footer__content container">
-      <div class="footer__left-block">
+    <div class="container">
+      <div class="footer__heading">
         <a class="footer__logo logo" href="index.html">
           <img src="./img/logo-footer.png" width="163" height="35" alt="DEVICE">
         </a>
-        <p class="footer__text">г. Москва, ул. Строителей, 15</p>
-      </div>
-      <div class="footer__middle-block">
-        <ul class="footer__service">
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="footer__social">
-          <li>
-            <a href="#">
-              <img src="./img/social/fb.svg" width="32" height="32">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./img/social/inst.svg" width="32" height="32">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./img/social/tw.svg" width="32" height="32">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__right-block">
-        <ul class="footer__user-nav">
-          <li>
+        <div class="footer__user-nav">
             <a class="footer__login" href="#">Войти</a>
-          </li>
-          <li>
             <a class="footer__compare" href="#">Сравнить</a>
-          </li>
-          <li>
             <a class="footer__cart" href="#">Корзина</a>
-          </li>
-        </ul>
-        <p class="footer__tel">Тел.: +7 (495) 495-95-95</p>
+        </div>
+
+        <div class="footer__user-nav footer__user-nav--active">
+            <a class="footer__login" href="#">Валентин Петухов</a>
+            <a class="footer__logout" href="#">Выйти</a>
+            <a class="footer__compare" href="#">Сравнить</a>
+            <a class="footer__cart" href="#">Корзина</a>
+        </div>
+
+      </div>
+      <div class="footer__content">
+        <p class="footer__text">г. Москва, ул. Строителей, 15</p>
+        <div class="footer__links">
+          <ul class="footer__service">
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer__social">
+            <li>
+              <a href="#">
+                <img src="./img/social/fb.svg" width="32" height="32">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/social/inst.svg" width="32" height="32">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/social/tw.svg" width="32" height="32">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__text footer__tel">Тел.: +7 (495) 495-95-95</p>
         <a class="footer__academy-logo" href="https://up.htmlacademy.ru/htmlcss/27" target="_blank">
           <img src="./img/logo-htmlacademy.png" width="27" height="35">
         </a>
@@ -338,6 +350,48 @@
     </div>
   </footer>
 
+  <div class="modal">
+
+    <button type="button" class="modal__close" aria-label="Закрыть окно">
+      <img src="./img/modal-close.svg" width="55" height="55" alt="Закрыть">
+    </button>
+
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+
+      <div class="modal__field">
+
+        <div>
+          <label for="modal-name">Ваше имя:</label>
+          <input id="modal-name" type="text" class="modal__input" name="name" placeholder="Имя Фамилия" required>
+        </div>
+
+        <div>
+          <label for="modal-email">Ваш e-mail:</label>
+          <input id="modal-email" type="email" class="modal__input" name="email" placeholder="email@example.com" required>
+        </div>
+
+        <div>
+          <label for="modal-message">Текст письма:</label>
+          <textarea id="modal-message" name="message" class="modal__input" placeholder="В свободной форме" required></textarea>
+        </div>
+
+      </div>
+
+      <button type="submit" class="modal__button" aria-label="Отправить">Отправить</button>
+
+    </form>
+  </div>
+
+  <div class="modal-map" id="map">
+    <button type="button" class="modal-map__close" aria-label="Закрыть окно">
+      <img src="./img/modal-close.svg" width="55" height="55" alt="Закрыть">
+    </button>
+  </div>
+
+  <script src="https://api-maps.yandex.ru/2.1?bab3bdb3-8438-46cd-a063-248910568936&load=package.full&lang=ru_RU"></script>
+  <script src="./js/script-map.js"></script>
+  <script src="./js/script-modal-map.js"></script>
+  <script src="./js/script-modal.js"></script>
   <script src="./js/script-slider.js"></script>
   <script src="./js/script-service.js"></script>
 </body>
