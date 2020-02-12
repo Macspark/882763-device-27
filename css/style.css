@@ -1068,7 +1068,19 @@ a {
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
   background-color: #ffffff;
 
+  animation: fromside 300ms;
   z-index: 10;
+}
+
+@keyframes fromside {
+  from {
+    opacity: 0.3;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .modal--active {
@@ -1219,6 +1231,7 @@ a {
   background-color: #ebebeb;
   background-image: url("../img/map-big.jpg");
 
+  animation: fromside 300ms;
   z-index: 10;
 }
 
