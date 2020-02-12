@@ -81,7 +81,8 @@ a {
 }
 
 .header__user-nav {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding-top: 10px;
 
   display: none;
 }
@@ -90,6 +91,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.header__heading {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__search {
@@ -167,6 +173,7 @@ a {
 
 .header__user-nav .header__logout {
   margin-left: 20px;
+  margin-right: -153px;
   padding: 0;
 
   font-family: OpenSans;
@@ -178,7 +185,7 @@ a {
 }
 
 .header__compare {
-  margin-left: 59px;
+  margin-left: 212px;
   background: url("../img/compare-icon.svg") no-repeat 5px 50%;
 }
 
