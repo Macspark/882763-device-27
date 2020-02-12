@@ -827,7 +827,7 @@ a {
 
 .footer__left-block::after {
   position: absolute;
-  bottom: 20px;
+  bottom: 37px;
 
   display: block;
   content: "";
@@ -838,16 +838,18 @@ a {
 }
 
 .footer__middle-block {
-  padding-top: 72px;
+  padding-top: 57px;
 
   width: 480px;
 }
 
 .footer__service {
-  margin-bottom: 64px;
+  margin-bottom: 65px;
+  padding: 0;
 
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 
 .footer__service a {
@@ -874,8 +876,12 @@ a {
 }
 
 .footer__social {
+  padding: 0;
+
   display: flex;
   justify-content: center;
+
+  list-style: none;
 }
 
 .footer__social a {
@@ -987,7 +993,7 @@ a {
 }
 
 .footer__academy-logo {
-  position: absolute;;
-  bottom: 0;
+  position: absolute;
+  bottom: 15px;
   right: 0;
 }
