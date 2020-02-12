@@ -257,7 +257,7 @@ a {
 
 .slider {
   position: relative;
-  margin-bottom: 99px;
+  margin-bottom: 84px;
 
   background: linear-gradient(to bottom, #F7E397 120px, #ffffff 120px);
 }
@@ -366,13 +366,14 @@ a {
 }
 
 .slider__button:active,
- .slider__button:focus {
+.slider__button:focus {
   color: rgba(0, 0, 0, 0.3);
   background: #F1C62A;
 }
 
 .slider__stats {
   padding: 0;
+  margin-bottom: 30px;
 
   display: flex;
   flex-wrap: wrap;
@@ -382,6 +383,10 @@ a {
 
 .slider__stats li {
   margin: 0 77px 0 0;
+}
+
+.slider__stats li:last-child {
+  margin: 0;
 }
 
 .slider__stats-value {
@@ -451,7 +456,7 @@ a {
 }
 
 .products {
-  padding: 0;
+  padding: 0 0 163px 0;
 
   display: flex;
   flex-wrap: wrap;
@@ -515,4 +520,272 @@ a {
   font-weight: 800;
   line-height: 1.33;
   letter-spacing: 0.18px;
+}
+
+.service {
+  margin-bottom: 94px;
+
+  min-width: 1440px;
+  height: 288px;
+  background-color: #e5e5e5;
+}
+
+.service__wrapper {
+  position: relative;
+  top: -100px;
+
+  display: flex;
+  height: 319px;
+}
+
+.service__controls {
+  padding-top: 80px;
+
+  border-right: 7px solid #000000;
+}
+
+.service__button {
+  margin: 0 117px 24px 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 40px;
+  box-sizing: border-box;
+
+  background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.service__button:hover,
+.service__button:focus {
+  background: #F1C62A;
+}
+
+.service__wrapper .service__button:active,
+.service__wrapper .service__button--active {
+  color: #f7e184;
+  background: #000000;
+}
+
+.service__wrapper .service__button:active::after,
+.service__wrapper .service__button--active::after {
+  position: absolute;
+  left: 160px;
+
+  content: "";
+  width: 117px;
+  height: 40px;
+
+  background: #000000;
+}
+
+.service__content {
+  padding: 35px 118px;
+  width: 575px;
+
+  display: none;
+}
+
+.service__content--active {
+  display: block;
+}
+
+.service__title {
+  margin-bottom: 30px;
+
+  font-family: Gilroy;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+}
+
+.service__text {
+  width: 440px;
+
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.15px;
+  color: #464646;
+}
+
+.service__content1 {
+  background: url("../img/delivery.svg") no-repeat 100% 55%;
+}
+
+.service__content2 {
+  background: url("../img/warranty.svg") no-repeat 100% 50%;
+}
+
+.service__content3 {
+  background: url("../img/credit.svg") no-repeat 100% 50%;
+}
+
+.partners {
+  margin-bottom: 80px;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.partners li {
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.partners li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.partners__item {
+  display: block;
+  width: 260px;
+  height: 100px;
+  outline: none;
+}
+
+.partners__item img {
+  object-fit: contain;
+}
+
+.partners__item:hover .partners__hidden,
+.partners__item:focus .partners__hidden{
+  display: block;
+}
+
+.partners__hidden {
+  position: absolute;
+  display: none;
+}
+
+.company {
+  display: flex;
+}
+
+.company__about {
+  margin-right: 98px;
+
+  width: 500px;
+}
+
+.company__title::before {
+  position: relative;
+  top: -46px;
+  left: 1px;
+
+  display: block;
+  content: "";
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+}
+
+.company__title {
+  margin-bottom: 43px;
+  font-family: Gilroy;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+}
+
+.company__text {
+  margin: 0 0 30px 0;
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  color: #464646;
+}
+
+.company__delivery-partners {
+  margin: 65px 0 55px 0;
+  padding: 0 0 0 20px;
+
+  list-style: none;
+
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2.5;
+}
+
+.company__delivery-partners li::before{
+  position: absolute;
+  left: -18px;
+  top: 16px;
+
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  box-sizing: border-box;
+
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.company__delivery-partners li {
+  position: relative;
+  padding-left: 17px;
+}
+
+.company__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 40px;
+
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  outline: none;
+
+  background: linear-gradient(to bottom, #ffffff 16px, #f0c52e 16px, #f0c52e 24px, #ffffff 24px);
+}
+
+.company__button:hover {
+  transition: 300ms ease-out;
+  background: #F1C62A;
+}
+
+.company__button:active,
+.company__button:focus {
+  color: rgba(0, 0, 0, 0.3);
+  background: #F1C62A;
+}
+
+.company__contact {
+  width: 560px;
+}
+
+.company__contact .company__text {
+  margin-bottom: 39px;
+}
+
+.company__map {
+  margin: 0 0 69px 0;
+
+  width: 560px;
+  height: 222px;
+  background-image: url("../img/map.jpg");
 }
