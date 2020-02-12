@@ -793,7 +793,201 @@ a {
 }
 
 .footer {
+  padding: 65px 0;
+
   min-width: 1440px;
-  height: 323px;
   background-color: #464646;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin-bottom: 29px;
+
+  display: block;
+  width: 163px;
+  height: 35px;
+}
+
+.footer__text {
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.footer__left-block {
+  position: relative;
+  width: 330px;
+}
+
+.footer__left-block::after {
+  position: absolute;
+  bottom: 20px;
+
+  display: block;
+  content: "";
+  width: 80px;
+  height: 7px;
+
+  background-color: #ffc600;
+}
+
+.footer__middle-block {
+  padding-top: 72px;
+
+  width: 480px;
+}
+
+.footer__service {
+  margin-bottom: 64px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer__service a {
+  margin: 0 16px;
+
+  display: block;
+
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__service a:hover {
+  opacity: 0.6;
+}
+
+.footer__service a:active,
+.footer__service a:focus {
+  opacity: 0.3;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social a {
+  margin: 0 11px;
+
+  outline: none;
+  opacity: 0.3;
+}
+
+.footer__social a:hover {
+  opacity: 0.6;
+}
+
+.footer__social a:active,
+.footer__social a:focus {
+  opacity: 0.1;
+}
+
+.footer__right-block {
+  position: relative;
+
+  width: 330px;
+}
+
+.footer__user-nav {
+  padding: 0;
+  margin: 0 0 35px 0;
+
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.footer__user-nav li {
+  margin-left: 38px;
+}
+
+.footer__user-nav a {
+  position: relative;
+  padding-left: 25px;
+
+  display: block;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__user-nav a:hover {
+   color: #ffffff;
+}
+
+.footer__user-nav a:hover::before {
+   opacity: 0.6;
+   color: #ffffff;
+}
+
+.footer__user-nav a:active,
+.footer__user-nav a:focus {
+   color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__user-nav a:active::before,
+.footer__user-nav a:focus::before {
+   opacity: 0.3;
+}
+
+.footer__login::before {
+  position: absolute;
+  left: 0;
+  top: 9px;
+
+  content: "";
+  width: 13px;
+  height: 12px;
+
+  background: url("../img/yellowlogin-icon.png");
+}
+
+.footer__compare::before {
+  position: absolute;
+  left: 6px;
+  top: 10px;
+
+  content: "";
+  width: 10px;
+  height: 10px;
+
+  background: url("../img/yellowcompare-icon.png");
+}
+
+.footer__cart::before {
+  position: absolute;
+  left: 3px;
+  top: 8px;
+
+  content: "";
+  width: 12px;
+  height: 12px;
+
+  background: url("../img/yellowcart-icon.png");
+}
+
+.footer__tel {
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  color: #ffffff;
+  text-align: right;
+}
+
+.footer__academy-logo {
+  position: absolute;;
+  bottom: 0;
+  right: 0;
 }
