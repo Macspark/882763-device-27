@@ -181,7 +181,7 @@ a {
   border: 2px solid #000000;
   background-color: #F7E397;
 
-  transition: 300ms ease-out;
+  transition: color, background-color 300ms ease-out;
 }
 
 .header__search-bar:focus + button {
