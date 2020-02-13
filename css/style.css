@@ -325,7 +325,7 @@ a {
 
 .slider {
   position: relative;
-  margin-bottom: 84px;
+  margin-bottom: 85px;
 
   background: linear-gradient(to bottom, #F7E397 120px, #ffffff 120px);
 }
@@ -500,7 +500,8 @@ a {
 }
 
 .products {
-  padding: 0 0 163px 0;
+  margin-bottom: 163px;
+  padding: 0;
 
   display: flex;
   flex-wrap: wrap;
@@ -691,17 +692,17 @@ a {
   width: 260px;
   height: 100px;
   outline: none;
-
-  transition: 300ms ease-out;
 }
 
 .partners__item img {
   object-fit: contain;
+  transition: 300ms ease-out;
 }
 
 .partners__item:hover .partners__hidden,
-.partners__item:focus .partners__hidden{
+.partners__item:focus .partners__hidden {
   opacity: 1;
+  z-index: 10;
 }
 
 .partners__hidden {
