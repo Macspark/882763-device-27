@@ -74,6 +74,8 @@ a {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 
+  background-color: transparent;
+
   outline: none;
   z-index: 5;
 }
