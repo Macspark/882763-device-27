@@ -574,7 +574,7 @@ a {
 .service {
   margin-bottom: 94px;
 
-  min-width: 1440px;
+  min-width: 1160px;
   height: 288px;
   background-color: #e5e5e5;
 }
@@ -809,7 +809,8 @@ a {
 .footer {
   padding: 65px 0;
 
-  min-width: 1440px;
+  min-width: 1160px;
+
   background-color: #464646;
 }
 
