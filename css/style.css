@@ -497,7 +497,7 @@ a {
 }
 
 .products {
-  margin-bottom: 163px;
+  margin-bottom: 123px;
   padding: 0;
 
   display: flex;
@@ -509,6 +509,7 @@ a {
 .products li {
   width: 160px;
   margin-right: 40px;
+  margin-bottom: 40px;
 }
 
 .products li:nth-child(6n) {
