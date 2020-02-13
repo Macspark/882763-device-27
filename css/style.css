@@ -283,11 +283,11 @@ a {
   top: 2px;
 
   background-image: url("../img/open-catalog-icon.png");
+  transition: 0.5s;
 }
 
 .header__catalog-btn:hover > a::after {
   transform: rotate(135deg);
-  transition: 0.5s;
 }
 
 .header__catalog-btn:hover .header__catalog {
