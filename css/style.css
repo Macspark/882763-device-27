@@ -180,6 +180,8 @@ a {
 
   border: 2px solid #000000;
   background-color: #F7E397;
+
+  transition: 300ms ease-out;
 }
 
 .header__search-bar:focus + button {
@@ -190,8 +192,6 @@ a {
   visibility: visible;
   color: #ffffff;
   background-color: #000000;
-
-  transition: 300ms ease-out;
 }
 
 .header__search-bar + button:active {
@@ -200,7 +200,10 @@ a {
 
 .header__user-nav a {
   padding-left: 25px;
-  transition: opacity 300ms ease-out;
+}
+
+.header a {
+  transition: 300ms ease-out;
 }
 
 .header a:hover {
@@ -519,9 +522,13 @@ a {
   outline: none;
 }
 
+.products__img-wrapper,
+.products__title {
+  transition: 300ms ease-out;
+}
+
 .products__item:hover .products__img-wrapper,
 .products__item:focus .products__img-wrapper {
-  transition: 300ms ease-out;
   background-color: #f0c52e;
 }
 
@@ -684,6 +691,8 @@ a {
   width: 260px;
   height: 100px;
   outline: none;
+
+  transition: 300ms ease-out;
 }
 
 .partners__item img {
@@ -692,7 +701,6 @@ a {
 
 .partners__item:hover .partners__hidden,
 .partners__item:focus .partners__hidden{
-  transition: 300ms ease-out;
   opacity: 1;
 }
 
@@ -824,10 +832,11 @@ a {
   display: block;
   width: 163px;
   height: 35px;
+
+  transition: 300ms ease-out;
 }
 
 .footer__logo:hover {
-  transition: 300ms ease-out;
   opacity: 0.6;
 }
 
@@ -883,10 +892,11 @@ a {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #ffffff;
+
+  transition: 300ms ease-out;
 }
 
 .footer__service a:hover {
-  transition: 300ms ease-out;
   opacity: 0.6;
 }
 
@@ -909,10 +919,11 @@ a {
 
   outline: none;
   opacity: 0.3;
+
+  transition: 300ms ease-out;
 }
 
 .footer__social a:hover {
-  transition: 300ms ease-out;
   opacity: 0.6;
 }
 
@@ -955,10 +966,10 @@ a {
   display: block;
 
   color: rgba(255, 255, 255, 0.7);
+  transition: 300ms ease-out;
 }
 
 .footer__user-nav a:hover {
-   transition: 300ms ease-out;
    color: #ffffff;
 }
 
@@ -1021,10 +1032,11 @@ a {
   position: absolute;
   bottom: 15px;
   right: 0;
+
+  transition: 300ms ease-out;
 }
 
 .footer__academy-logo:hover {
-  transition: 300ms ease-out;
   opacity: 0.6;
 }
 
@@ -1078,6 +1090,7 @@ a {
   border: none;
   outline: none;
 
+  transition: 300ms ease-out;
   z-index: 20;
 }
 
@@ -1085,7 +1098,6 @@ a {
 .modal-map__close:hover {
   cursor: pointer;
   opacity: 0.5;
-  transition: 300ms ease-out;
 }
 
 .modal__close:focus,
@@ -1136,6 +1148,8 @@ a {
   outline: none;
   border: 3px solid transparent;
   background-color: #f2f2f2;
+
+  transition: 300ms ease-out;
 }
 
 .modal__input:not(:placeholder-shown):invalid {
@@ -1144,7 +1158,6 @@ a {
 
 .modal__field .modal__input:hover {
   background-color: #eaeaea;
-  transition: 300ms ease-out;
 }
 
 .modal__field .modal__input:focus {
