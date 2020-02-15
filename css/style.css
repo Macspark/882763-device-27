@@ -43,6 +43,16 @@ body {
   letter-spacing: 0.15px;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -1204,7 +1214,7 @@ a {
 }
 
 .pages-nav {
-  padding-left: 120px;
+  padding: 0 60px;
   margin-bottom: 45px;
 }
 
