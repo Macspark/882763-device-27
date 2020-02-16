@@ -217,7 +217,7 @@ a {
 
 .header a,
 .header__user-nav li {
-  transition: 300ms ease-out;
+  transition: opacity 300ms ease-out;
 }
 
 .header a:hover,
@@ -583,7 +583,7 @@ a {
 }
 
 .popular__padded-img {
-  margin-top: 40px;
+  margin-top: 40px;s
 }
 
 .popular__img-wrapper img {
@@ -1705,6 +1705,8 @@ input:not(:disabled) + .filter__label:active.filter__label::before {
   line-height: 2.77;
   letter-spacing: 0.13px;
   color: rgba(0, 0, 0, 0.5);
+
+  transition: 300ms ease-out;
 }
 
 .products__compare:hover {
