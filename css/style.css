@@ -1228,7 +1228,7 @@ a {
 .pages-nav__title {
   margin: 38px 0 20px 0;
 
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 1.02;
@@ -1248,7 +1248,6 @@ a {
 }
 
 .pages-nav__list a {
-  font-family: OpenSans;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -1307,7 +1306,7 @@ a {
 
   width: 328px;
 
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 1.5;
@@ -1344,7 +1343,7 @@ a {
 
   box-sizing: border-box;
 
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 1.5;
@@ -1367,7 +1366,6 @@ a {
   padding: 10px 0;
 
   display: block;
-  font-family: OpenSans;
   font-size: 14px;
   line-height: 1.29;
   opacity: 0.3;
@@ -1438,7 +1436,7 @@ a {
   padding: 0;
   margin: 0 0 16px 5px;
 
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
@@ -1500,7 +1498,7 @@ a {
   min-width: 55px;
   white-space: nowrap;
 
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -1550,7 +1548,6 @@ a {
   display: flex;
   align-items: center;
 
-  font-family: OpenSans;
   font-size: 14px;
   font-weight: 300;
   line-height: 2.86;
@@ -1660,7 +1657,7 @@ input:not(:disabled) + .filter__label:active.filter__label::before {
 
   width: 260px;
 
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
@@ -1671,7 +1668,7 @@ input:not(:disabled) + .filter__label:active.filter__label::before {
   padding: 0;
   margin: 0;
 
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
@@ -1699,7 +1696,6 @@ input:not(:disabled) + .filter__label:active.filter__label::before {
 }
 
 .products__compare {
-  font-family: OpenSans;
   font-size: 13px;
   font-weight: 300;
   line-height: 2.77;
@@ -1753,7 +1749,7 @@ input:not(:disabled) + .filter__label:active.filter__label::before {
 }
 
 .pages a {
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 1.5;
@@ -1795,7 +1791,7 @@ input:not(:disabled) + .filter__label:active.filter__label::before {
 }
 
 .pages__list a {
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 3.2px;
