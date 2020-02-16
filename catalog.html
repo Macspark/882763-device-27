@@ -83,33 +83,34 @@
     <nav class="header__main-nav">
       <ul class="header__main-menu">
         <li class="header__catalog-btn">
-          <a href="#">Каталог товаров</a>
-          <div class="header__catalog">
-            <ul>
-              <li>
-                <a href="#">Виртуальная реальность</a>
-              </li>
-              <li>
-                <a href="#">Моноподы для селфи</a>
-              </li>
-              <li>
-                <a href="#">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a href="#">Умные часы</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </div>
+          <a href="catalog.html">Каталог товаров</a>
+            <div class="header__catalog">
+              <ul>
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </li>
           <li>
             <a class="header__delivery" href="#">Доставка</a>
           </li>
@@ -128,30 +129,56 @@
       <h1 class="pages-nav__title">Моноподы для селфи</h1>
       <ul class="pages-nav__list">
         <li>
-          <a href="#">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li>
           <a href="#">Каталог товаров</a>
         </li>
         <li>
-          <a href="#">Моноподы для селфи</a>
+          <a href="catalog.html">Моноподы для селфи</a>
         </li>
       </ul>
     </div>
 
-    <div class="catalog container">
+    <div class="catalog">
 
       <div class="filter">
+
         <div class="filter__heading">
           <h2>Фильтр:</h2>
+        </div>
+
+        <div class="filter__wrapper">
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+
+            <fieldset class="filter__fieldset">
+              <legend>Стоимость</legend>
+              <div class="filter__slider">
+                <div class="filter__bar">
+                  <div class="filter__bar-fill">
+                    <button class="filter__button" type="button" aria-label="Минимальная стоимость"></button>
+                    <span class="filter__range">от 0</span>
+                    <button class="filter__button" type="button" aria-label="Максимальная стоимость"></button>
+                    <span class="filter__range">до 5000</span>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter__fieldset">
+              <legend>Цвет</legend>
+            </fieldset>
+
+          </form>
         </div>
 
       </div>
 
       <div class="products">
+
         <div class="sorting">
-          <h2>Сортировка:</h2>
           <div class="sorting__wrapper">
+            <h2>Сортировка:</h2>
             <ul class="sorting__sort-type">
               <li>
                 <a class="sorting__item sorting__item--active" href="#">По цене</a>
@@ -165,14 +192,27 @@
             </ul>
             <ul class="sorting__sort-arrows">
               <li>
-                <a class="sorting__item sorting__item--active" href="#">1</a>
+                <a class="sorting__item" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                      <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="sorting__item" href="#">2</a>
+                <a class="sorting__item sorting__item--active" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                      <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
         </div>
+
+        <div class="products__wrapper">
+          456
+        </div>
+
       </div>
 
     </div>

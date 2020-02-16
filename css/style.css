@@ -265,6 +265,7 @@ a {
 
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
@@ -276,16 +277,17 @@ a {
   list-style: none;
 }
 
-.header__main-menu > li:nth-child(1) {
-  margin-right: 293px;
-}
-
-.header__main-menu > li:nth-child(2) {
+.header__main-menu > li {
   margin-right: 35px;
 }
 
-.header__main-menu > li:nth-child(3) {
-  margin-right: auto;
+.header__main-menu > li:first-child {
+  margin-right: 293px;
+}
+
+.header__main-menu > li:last-child {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .header__catalog-btn > a {
@@ -646,7 +648,7 @@ a {
 
 .service__content {
   padding: 35px 118px;
-  width: 575px;
+  width: 810px;
 
   display: none;
 }
@@ -1271,53 +1273,35 @@ a {
 }
 
 .filter {
-  position: relative;
-
-  width: 328px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-grow: 1;
 
   background-color: #ebebeb;
 }
 
-.filter::before {
-  position: absolute;
-  top: 0;
-  left: -9999px;
-
-  display: block;
-  content: "";
-  background-color: #ebebeb;
-  width: 9999px;
-  height: 100%;
-
-  z-index: -1;
+.products {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .filter__heading {
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
   min-height: 69px;
+  width: 100%;
 
   background-color: #d9d9d9;
-}
-
-.filter__heading::before {
-  position: absolute;
-  top: 0;
-  left: -9999px;
-
-  display: block;
-  content: "";
-  background-color: #d9d9d9;
-  width: 9999px;
-  height: 100%;
-
-  z-index: -1;
 }
 
 .filter__heading h2 {
-  padding: 22px 60px;
+  padding: 22px 0 0 60px;
   margin: 0;
 
-  box-sizing: border-box;
+  width: 328px;
 
   font-family: Gilroy;
   font-size: 16px;
@@ -1327,35 +1311,30 @@ a {
   text-transform: uppercase;
 }
 
+.filter__wrapper {
+  width: 328px;
+}
 
-.products {
+.sorting__wrapper {
+  display: flex;
+  width: 832px;
+}
+
+.products__wrapper {
+  width: 832px;
 }
 
 .sorting {
-  position: relative;
-  min-height: 69px;
-
   display: flex;
+  min-height: 69px;
+  width: 100%;
+
   background-color: #ebebeb;
-}
-
-.sorting::before {
-  position: absolute;
-  top: 0;
-  right: -9999px;
-
-  display: block;
-  content: "";
-  background-color: #ebebeb;
-  width: 9999px;
-  height: 100%;
-
-  z-index: -1;
 }
 
 .sorting h2 {
-  padding: 22px 0 22px 73px;
-  margin: 0 45px 0 0;
+  padding: 22px 45px 0 72px;
+  margin: 0 0;
 
   box-sizing: border-box;
 
@@ -1374,27 +1353,136 @@ a {
   list-style: none;
 }
 
-.sorting li {
-  margin: 0 9px 0 0;
+.sorting__sort-type li {
+  margin: 0 19px 0 10px;
 }
 
 .sorting__item {
-  padding: 10px;
+  padding: 10px 0;
 
   display: block;
   font-family: OpenSans;
   font-size: 14px;
   line-height: 1.29;
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 
 .sorting__item--active {
   opacity: 1;
-  color: #000000;
 }
 
-.sorting__wrapper {
+.sorting__sort-arrows {
+  margin-left: auto;
+}
+
+.sorting__sort-arrows li {
+  margin-left: 18px;
+}
+
+.filter__form {
+  margin: 82px 54px;
+}
+
+.filter__fieldset {
+  position: relative;
+  padding: 0;
+  margin: 0 0 61px 0;
+
+  width: 206px;
+  border: none;
+}
+
+.filter__fieldset::before {
+  position: absolute;
+  top: -13px;
+  left: 5px;
+
+  content: "";
+  width: 201px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.filter__fieldset:last-child::after {
+  display: none;
+}
+
+.filter__fieldset legend {
+  padding: 0;
+  margin: 0 0 16px 5px;
+
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 0.18px;
+}
+
+.filter__slider {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+}
+
+.filter__bar {
+  width: 100%;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.filter__bar-fill {
+  width: 65%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 550px;
+
+  background-color: #91c92f;
+}
+
+.filter__button {
+  position: relative;
+
+  width: 20px;
+  height: 22px;
+
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+
+  background: url("../img/filter-btn.svg");
+
+  cursor: pointer;
+}
+
+.filter__button:active {
+  transform: scale(1.1);
+}
+
+.filter__range {
+  position: absolute;
+  bottom: -14px;
+
+  display: block;
+  min-width: 55px;
+  white-space: nowrap;
+
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.filter__range:first-of-type {
+  left: 5px;
+}
+
+.filter__range:last-of-type {
+  left: 95px;
 }
