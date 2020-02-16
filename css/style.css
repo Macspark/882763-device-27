@@ -496,6 +496,8 @@ a {
   height: 12px;
   box-sizing: border-box;
 
+  font-size: 0;
+
   outline: none;
   border: 1px solid #000000;
   border-radius: 50%;
@@ -581,7 +583,7 @@ a {
 }
 
 .popular__padded-img {
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 .popular__img-wrapper img {
