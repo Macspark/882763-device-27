@@ -286,7 +286,7 @@ a {
 }
 
 .header__main-menu > li:first-child {
-  margin-right: 293px;
+  margin-right: 320px;
 }
 
 .header__main-menu > li:last-child {
@@ -295,20 +295,18 @@ a {
 }
 
 .header__catalog-btn > a {
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .header__catalog-btn > a::after {
-  margin-left: 12px;
+  position: absolute;
+  right: -28px;
+  top: 3px;
 
   display: block;
   width: 16px;
   height: 16px;
   content: "";
-
-  left: 231px;
-  top: 2px;
 
   background-image: url("../img/open-catalog-icon.png");
   transition: 0.5s;
@@ -1208,18 +1206,6 @@ a {
 
 .modal-map--active {
   display: block;
-}
-
-.modal-map__close {
-  position: absolute;
-  right: 5px;
-  top: 45px;
-
-  background-color: transparent;
-  border: none;
-  outline: none;
-
-  z-index: 20;
 }
 
 .pages-nav {
