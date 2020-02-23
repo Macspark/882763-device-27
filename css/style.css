@@ -873,8 +873,6 @@ a {
 }
 
 .footer__text {
-  width: 250px;
-
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
@@ -894,7 +892,7 @@ a {
 }
 
 .footer__links {
-  margin: 7px 0 0 0;
+  margin: 7px 40px 0 0;
 }
 
 .footer__service {
@@ -1027,6 +1025,10 @@ a {
 
 .footer__tel {
   text-align: right;
+}
+
+.footer__tel a {
+  color: #ffffff;
 }
 
 .footer__academy-logo {
@@ -1501,6 +1503,16 @@ a {
   left: 95px;
 }
 
+.filter__range input {
+  -moz-appearance:textfield;
+}
+
+.filter__range input::-webkit-outer-spin-button,
+.filter__range input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .filter__fieldset ul {
   padding: 0 0 0 4px;
   margin: 1px 0 0 0;
@@ -1611,6 +1623,8 @@ input:not(:disabled) + .filter__label:active.filter__label::before {
 }
 
 .products__item {
+  position: relative;
+
   margin: 10px 40px 37px 0;
 
   width: 360px;
@@ -1618,6 +1632,29 @@ input:not(:disabled) + .filter__label:active.filter__label::before {
 
 .products__item:nth-child(2n) {
   margin-right: 0;
+}
+
+.products__item--new::after {
+  position: absolute;
+  right: 27px;
+  top: 29px;
+
+  padding: 17px 14px;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+  content: "NEW";
+
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.71;
+  letter-spacing: 0.7px;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .products__img {
@@ -1771,11 +1808,7 @@ input:not(:disabled) + .filter__label:active.filter__label::before {
 }
 
 .pages__list li {
-  margin-right: 28px;
-}
-
-.pages__list li:last-child {
-  margin-right: 0;
+  margin: 0 14px;
 }
 
 .pages__list a {
