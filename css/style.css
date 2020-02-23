@@ -506,6 +506,8 @@ a {
   border: 1px solid #000000;
   border-radius: 50%;
 
+  background-color: #ffffff;
+
   cursor: pointer;
 }
 
@@ -646,6 +648,7 @@ a {
 .service__button:active::after,
 .service__button--active::after {
   position: absolute;
+  top: 0;
   left: 160px;
 
   content: "";
