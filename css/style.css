@@ -216,17 +216,17 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.header a,
+.header a[href],
 .header__user-nav li {
   transition: opacity 300ms ease-out;
 }
 
-.header a:hover,
+.header a[href]:hover,
 .header__user-nav li:hover {
   opacity: 0.6;
 }
 
-.header a:active,
+.header a[href]:active,
 .header__user-nav li:active {
   opacity: 0.3;
 }
@@ -866,12 +866,12 @@ a {
   transition: 300ms ease-out;
 }
 
-.footer__logo:hover {
+.footer__logo[href]:hover {
   opacity: 0.6;
 }
 
-.footer__logo:focus,
-.footer__logo:active {
+.footer__logo[href]:focus,
+.footer__logo[href]:active {
   opacity: 0.3;
 }
 
