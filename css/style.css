@@ -1510,6 +1510,8 @@ a {
 }
 
 .filter__range input {
+  width: 50px;
+
   -moz-appearance:textfield;
 }
 
@@ -1517,6 +1519,11 @@ a {
 .filter__range input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.filter__range input:focus {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .filter__fieldset ul {
