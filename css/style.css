@@ -1039,8 +1039,11 @@ a {
 
 .footer__academy-logo {
   position: absolute;
-  bottom: 15px;
+  bottom: 25px;
   right: 0;
+
+  width: 27px;
+  height: 35px;
 
   transition: 300ms ease-out;
 }
@@ -1555,11 +1558,14 @@ a {
 }
 
 .filter__label {
-  padding: 0;
+  position: relative;
+
+  padding: 0 0 0 40px;
   margin: 0;
 
   display: flex;
   align-items: center;
+  height: 40px;
 
   font-size: 14px;
   font-weight: 300;
@@ -1569,7 +1575,9 @@ a {
 }
 
 .filter__checkbox + .filter__label::before {
-  margin-right: 13px;
+  position: absolute;
+  top: 8px;
+  left: 0;
 
   content: "";
   width: 27px;
@@ -1583,7 +1591,9 @@ a {
 }
 
 .filter__radio + .filter__label::before {
-  margin-right: 15px;
+  position: absolute;
+  top: 8px;
+  left: 0;
 
   content: "";
   width: 25px;
