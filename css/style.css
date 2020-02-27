@@ -1035,7 +1035,7 @@ a {
 }
 
 .footer__tel {
-  margin-left: auto;
+  border: 1px solid red;
   text-align: right;
 }
 
