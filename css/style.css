@@ -902,7 +902,8 @@ a {
 }
 
 .footer__links {
-  margin: 7px 40px 0 0;
+  margin: 7px 0 0 0;
+  padding: 0 40px 0 0;
 }
 
 .footer__service {
@@ -1034,24 +1035,11 @@ a {
 }
 
 .footer__tel {
-  border: 1px solid red;
   text-align: right;
 }
 
 .footer__tel a {
   color: #ffffff;
-}
-
-.footer__content {
-  border: 1px solid red;
-}
-
-.footer__user-nav {
-  border: 1px solid red;
-}
-
-.footer__heading {
-  border: 1px solid green;
 }
 
 .footer__academy-logo {
