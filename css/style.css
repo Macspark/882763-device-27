@@ -249,7 +249,11 @@ a {
 }
 
 .header__compare {
-  margin-left: auto;
+  margin-left: 215px;
+}
+
+.header__logout ~ .header__compare {
+  margin-left: 62px;
 }
 
 .header__compare svg {
@@ -887,6 +891,7 @@ a {
 
 .footer__heading::after {
   position: absolute;
+  left: 0;
   bottom: -129px;
 
   display: block;
