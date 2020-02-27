@@ -124,8 +124,6 @@ a {
   position: relative;
   padding: 34px 60px 33px 60px;
 
-  box-sizing: border-box;
-
   background-color: #F7E397;
 }
 
@@ -167,7 +165,6 @@ a {
   padding: 0 37px;
 
   display: block;
-  box-sizing: border-box;
   width: 356px;
   height: 49px;
 
@@ -332,7 +329,6 @@ a {
 
   display: none;
   width: 100%;
-  box-sizing: border-box;
   background-color: #F7E397;
 
   font-size: 15px;
@@ -504,7 +500,6 @@ a {
 
   width: 12px;
   height: 12px;
-  box-sizing: border-box;
 
   outline: none;
   border: 1px solid #000000;
@@ -529,7 +524,7 @@ a {
   content: "";
   width: 5px;
   height: 5px;
-  box-sizing: border-box;
+
   border: 1px solid #000000;
   border-radius: 50%;
 }
@@ -587,7 +582,6 @@ a {
   justify-content: center;
   width: 160px;
   height: 160px;
-  box-sizing: border-box;
 
   background-color: #F7E397;
 }
@@ -809,7 +803,6 @@ a {
   content: "";
   width: 8px;
   height: 8px;
-  box-sizing: border-box;
 
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -1078,7 +1071,7 @@ a {
   display: none;
   width: 960px;
   height: 553px;
-  box-sizing: border-box;
+
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
   background-color: #ffffff;
 
@@ -1159,7 +1152,6 @@ a {
 
   width: 360px;
   height: 50px;
-  box-sizing: border-box;
 
   font-size: 14px;
   line-height: 1.29;
@@ -1215,7 +1207,7 @@ a {
   display: none;
   width: 960px;
   height: 559px;
-  box-sizing: border-box;
+
   box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
   background-color: #ebebeb;
   background-image: url("../img/map-big.jpg");
@@ -1348,8 +1340,6 @@ a {
 .sorting h2 {
   padding: 22px 45px 0 72px;
   margin: 0 0;
-
-  box-sizing: border-box;
 
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
