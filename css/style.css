@@ -1408,7 +1408,6 @@ a {
 }
 
 .filter__fieldset {
-  position: relative;
   padding: 0;
   margin: 0 0 45px 0;
 
@@ -1424,10 +1423,10 @@ a {
   margin-bottom: 39px;
 }
 
-.filter__fieldset::before {
+.filter__fieldset legend::before {
   position: absolute;
   top: -13px;
-  left: 5px;
+  left: 0;
 
   content: "";
   width: 201px;
@@ -1441,6 +1440,8 @@ a {
 }
 
 .filter__fieldset legend {
+  position: relative;
+
   padding: 0;
   margin: 0 0 16px 5px;
 
