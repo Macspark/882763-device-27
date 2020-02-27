@@ -1496,7 +1496,7 @@ a {
 
 .filter__range {
   position: absolute;
-  bottom: -14px;
+  top: 21px;
 
   display: block;
   min-width: 55px;
@@ -1509,12 +1509,12 @@ a {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.filter__range:first-of-type {
+.filter__button:first-child .filter__range {
   left: 5px;
 }
 
-.filter__range:last-of-type {
-  left: 95px;
+.filter__button:last-child .filter__range {
+  left: -20px;
 }
 
 .filter__range input {
