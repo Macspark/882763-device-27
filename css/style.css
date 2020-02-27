@@ -1034,6 +1034,7 @@ a {
 }
 
 .footer__tel {
+  border: 1px solid red;
   text-align: right;
 }
 
