@@ -862,7 +862,6 @@ a {
   position: relative;
 
   display: flex;
-  justify-content: space-between;
 }
 
 .footer__logo {
@@ -968,7 +967,7 @@ a {
 }
 
 .footer__user-nav {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px auto;
 
   display: none;
   list-style: none;
