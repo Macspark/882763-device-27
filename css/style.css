@@ -1154,7 +1154,7 @@ a {
 }
 
 .modal__input {
-  padding: 20px;
+  padding: 0 20px;
   margin-bottom: 32px;
 
   width: 360px;
