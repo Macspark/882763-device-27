@@ -1046,6 +1046,14 @@ a {
   border: 1px solid red;
 }
 
+.footer__user-nav {
+  border: 1px solid red;
+}
+
+.footer__heading {
+  border: 1px solid green;
+}
+
 .footer__academy-logo {
   position: absolute;
   bottom: 25px;
