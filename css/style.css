@@ -1042,6 +1042,10 @@ a {
   color: #ffffff;
 }
 
+.footer__content {
+  border: 1px solid red;
+}
+
 .footer__academy-logo {
   position: absolute;
   bottom: 25px;
