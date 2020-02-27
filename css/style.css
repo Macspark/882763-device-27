@@ -1035,12 +1035,15 @@ a {
 }
 
 .footer__tel {
-  border: 1px solid red;
   text-align: right;
 }
 
 .footer__tel a {
   color: #ffffff;
+}
+
+.footer .container {
+  position: relative;
 }
 
 .footer__academy-logo {
